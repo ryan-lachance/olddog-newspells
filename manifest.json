@@ -16,8 +16,9 @@
                 "scripts/monster.js"
             ],
             "matches": [
+                "https://www.dndbeyond.com/monsters*",
                 "https://www.dndbeyond.com/monsters/*",
-                "https://www.dndbeyond.com/encounters"
+                "https://www.dndbeyond.com/encounters/*"
             ],
             "run_at": "document_idle",
             "type": "module"
