@@ -5,19 +5,16 @@
 
 function populate() {
     let elements = document.querySelectorAll('.spell-tooltip');
-    console.log("test")
     elements.forEach(element => {
-        link = element.href.split('/');
-        spell_components = link[link.length - 1].split('-');
+        let link = element.href.split('/');
+        let spell_components = link[link.length - 1].split('-');
         spell_components.shift();
-        spell_name = spell_components.join("-")
-        console.log(spell_name)
+        let spell_name = spell_components.join("-");
 
 
 
         if (spells[spell_name]) {
-            console.log('tests')
-            new_spell_id = spells[spell_name]
+            let new_spell_id = spells[spell_name]
             element.href = `https://www.dndbeyond.com/spells/${new_spell_id}-${spell_name}`;
             element.setAttribute('data-tooltip-href', `//www.dndbeyond.com/spells/${new_spell_id}-tooltip?disable-webm=1&disable-webm=1`);
         }
@@ -26,11 +23,12 @@ function populate() {
 }
 
 
-spells = {
+var spells = {
     "light": "2618996",
-    "sacred-flame": "2618967"
-}
+    "sacred-flame": "2618967",
+    "hold-person": "2619153"
+};
 
 
 
-setInterval(populate, 1000);
+setInterval(populate, 500);
