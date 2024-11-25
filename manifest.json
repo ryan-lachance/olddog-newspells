@@ -1,14 +1,14 @@
 {
     "manifest_version": 3,
     "name": "Old Dog New Spells",
-    "description": "Replace links and tooltips to legacy spells to their updated version on D&D Beyond.",
+    "description": "Replace links and tooltips to legacy spells with their updated version on D&D Beyond.",
     "version": "1.0",
     "permissions": [
-        "storage"
+        "activeTab"
     ],
     "action": {
-        "default_popup": "index.html",
-        "default_icon": "images/hello_extensions.png"
+        "default_icon": "images/icon.png",
+        "default_popup": "index.html"
     },
     "content_scripts": [
         {
@@ -26,4 +26,5 @@
             "type": "module"
         }
     ]
+
 }
