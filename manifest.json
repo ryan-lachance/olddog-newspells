@@ -4,7 +4,7 @@
     "description": "Replace links and tooltips to legacy spells with their updated version on D&D Beyond.",
     "version": "1.0",
     "permissions": [
-        "activeTab"
+        
     ],
     "action": {
         "default_icon": "images/icon.png",
