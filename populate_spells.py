@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 website = 'https://www.dndbeyond.com/spells'
-driver_path = r"C:\ChromeDriver\chromedriver.exe"  # Use raw string or double backslashes
+driver_path = r"C:\ChromeDriver\chromedriver.exe"
 
 service = Service(driver_path)
 driver = webdriver.Chrome(service=service)
@@ -16,7 +16,7 @@ driver.get(website)
 spells = {}
 
 def process_page():
-    # Find all elements with class name 'info' (adjust selector as needed)
+    # Find all elements with class name 'info'
     info_elements = driver.find_elements(By.CLASS_NAME, "info")
     
     for element in info_elements:
@@ -31,7 +31,7 @@ def process_page():
                 text_list = text.split('/')  # Split the string by "/"
                 spell_components = text_list[len(text_list) - 1].split('-')  # Split the last component by "-"
 
-                # Remove the first element from the list (equivalent of shift)
+                # Remove the first element from the list 
                 spell_id = spell_components.pop(0)
 
                 # Join the remaining components back into a string
