@@ -20,7 +20,9 @@
                 "https://www.dndbeyond.com/monsters/*",
                 "https://www.dndbeyond.com/encounters/*",
                 "https://www.dndbeyond.com/magic-items*",
-                "https://www.dndbeyond.com/magic-items/*"
+                "https://www.dndbeyond.com/magic-items/*",
+                "https://www.dndbeyond.com/encounter-builder/*",
+                "https://www.dndbeyond.com/combat-tracker/*"
             ],
             "run_at": "document_idle",
             "type": "module"

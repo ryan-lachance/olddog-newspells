@@ -12,7 +12,9 @@ function populate() {
       element.setAttribute(
         "data-tooltip-href",
         `//www.dndbeyond.com/spells/${new_spell_id}-tooltip?disable-webm=1&disable-webm=1`
+      
       );
+      element.setAttribute("data-tooltip-json-href",`/spells/${new_spell_id}/tooltip-json`);
     }
   });
 }
