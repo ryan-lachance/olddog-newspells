@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Old Dog, New Spells",
     "description": "Replace links and tooltips to legacy spells with their updated version on D&D Beyond.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "permissions": [
         
     ],
